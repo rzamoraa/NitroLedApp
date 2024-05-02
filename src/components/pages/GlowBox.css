@@ -1,0 +1,28 @@
+/* GlowBox.css */
+.glow-box {
+    
+    background-color: hsl(0, 0%, 0%);  /* Color de fondo del cuadro */
+   
+    box-shadow: rgb(100, 100, 100) 0 0 10px; /* Sombra */
+    background: 
+      linear-gradient(rgb(62, 63, 63), rgb(26, 26, 26)) padding-box, /* Fondo interior */
+      linear-gradient(to right, rgba(0, 0, 0, 0), rgb(242, 249, 255),rgb(0, 0, 0,0) ,rgb(0, 0, 0,0)) 100% 100%/200% 100%  border-box; /* Gradiente de borde */
+    border: 1px solid transparent; /* Espacio para el borde */
+   
+    animation: rotate 10s linear infinite;
+  }
+  
+
+@keyframes rotate {
+    from {
+        background-position: 0% 0%; /* Mueve solo el gradiente del borde */
+    }
+    to {
+        background-position: 400% 0%; /* Completa un ciclo del gradiente del borde */
+    }
+};
+ 
+
+.bg-repeat {
+  background-repeat: repeat;
+}
